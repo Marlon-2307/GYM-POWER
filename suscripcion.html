@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/estilos.css">
+    <link rel="stylesheet" href="CSS/normalize.css">
+    <title>GYM</title>
+</head>
+<body>
+    <header class="header-suscribir">
+        <div class="menu container">
+            <a href="index.html" class="logo">GYM<span>-power</span></a>
+            <input type="checkbox" id="menu">
+            <label for="menu">
+                <img class="menu-icono" src="Img/menu-btn.png" alt="menu-btn">
+            </label>
+            <nav class="nav-bar">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                    <li><a style="color: #c6f606;" href="#">Open: 6:00 A.M. - 8:00 P.M.</a></li>
+                    <li><a style="color: #c6f606;" href="#"><i class="fa-regular fa-user"></i></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="suscribir container">
+            <h3>Haz parte de nuestro equipo</h3>
+            <p>Suscribete en el Formulario</p>
+        <div class="suscribir-sg">
+            <form action="">
+                <label for="">Nombre:</label>
+                <input data-aos="fade-right" type="text" id="nombre" name="nombre" required>
+                <label for="">Telefono:</label>
+                <input data-aos="fade-left" type="tel" id="telefono" name="telefono" required>
+                <label for="">Email:</label>
+                <input data-aos="fade-right" type="email" id="email" name="email"required>
+                <label for="">Plan:</label>
+                <select data-aos="fade-left" id="plan" name="plan" required>
+                    <option value="#"></option>
+                    <option value="plan a">TRIMESTRAL</option>
+                    <option value="plan b">SEMESTRAL</option>
+                    <option value="plan c">ANUAL</option>
+                </select>
+                <label for="">Trainers:</label>
+                <select data-aos="fade-right" id="servicio" name="trainers" required>
+                    <option value="#"></option>
+                    <option value="trainer 1">TRAINER 1</option>
+                    <option value="trainer 2">TRAINER 2</option>
+                    <option value="trainer 3">TRAINER 3</option>
+                    <option value="trainer 4">SIN TRAINER</option>
+                </select> 
+                <label for="">Observacion ( opcional )</label>            
+                <textarea data-aos="fade-left" id="mensaje" name="mensaje" rows="4" style="font-family: sans-serif;"></textarea>
+
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
+    </section>
+
+    <footer id="contacto">
+        <div class="ft container">
+            <div class="enlace">
+                <a href="index.html" class="logo">GYM<span>-power</span></a>
+                <div class="redes">
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>  
+                    <a href=""><i class="fa-brands fa-instagram"></i></>  
+                    <a href=""><i class="fa-brands fa-youtube"></i></a> 
+                </div>   
+            </div>
+
+            <div class="enlace">
+                <h3>Servicios al Cliente</h3>
+                <li><a href="#">Lorem</a></li>
+                <li><a href="#">Lorem</a></li>
+                <li><a href="#">Lorem</a></li>
+                <li><a href="#">Lorem</a></li>
+            </div>
+
+            <div class="enlace">
+                <h3>Sedes</h3>
+                <li><a href="#">Lorem</a></li>
+                <li><a href="#">Lorem</a></li>
+                <li><a href="#">Lorem</a></li>
+                <li><a href="#">Lorem</a></li>
+            </div>
+
+            <div class="enlace">
+                <h3>Descargar App</h3>
+                <li><img src="Img/store1.png" alt=""></li> 
+                <li><img src="Img/store2.png" alt=""></li> 
+            </div>
+        </div>
+    </footer>
+
+    <button data-aos="fade-up" onclick="scrollToTop()" id="boton-top"><i class="fa-solid fa-angle-up"></i></button><!--icon deslizar-->
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

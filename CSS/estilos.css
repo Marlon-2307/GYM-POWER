@@ -1,0 +1,631 @@
+html {
+    font-size: 67.5%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: uppercase;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: "Play", sans-serif;
+    background-color: #000000;
+}
+
+.header {
+    background: linear-gradient(rgba(0, 0, 0, 0.761), rgba(0, 0, 0, 0.687));
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 115vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#videoFondo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+}
+
+.container {
+    max-width: 100rem;
+    margin: 0 auto;
+}
+
+.menu {
+    position: absolute;
+    top: 1rem;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+.menu .logo{
+    font-weight: bolder;
+    font-size: 4rem;
+    color: #c6f606;
+    text-shadow: 0 0 10px #0000007a;
+}
+
+.menu .nav-bar ul li {
+    position: relative;
+    float: left;
+}
+
+.menu .nav-bar ul li a {
+    font-size: 1.5rem;
+    padding: 2rem;
+    color: #fff;
+    display: block;
+    transition: all .3s;
+}
+
+.menu .nav-bar ul li a:hover {
+    color: #c6f606;
+}
+
+#menu {
+    display: none;
+}
+
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+
+.header-text {
+    text-align: center;
+    width: 80rem;
+}
+
+.header-text h1 {
+    color: #fff;
+    font-size: 5rem;
+    text-shadow: 0 0 10px #0000007a;
+}
+
+.header-text h1 span {
+    color: #c6f606;
+}
+
+.header-text p {
+    margin-top: 3rem;
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.boton-1 {
+    display: inline-block;
+    font-size: 1.2rem;
+    background-color: #c6f606;
+    text-shadow: 0 2px 3px #000000a3;
+    margin-top: 3rem;
+    padding: 1.5rem 3rem;
+    color: #fff;
+    transition: all .5s;
+}
+
+.boton-1:hover {
+    background-color: #c1f103a8;
+}
+
+/* Suscripcion */
+
+.header-suscribir {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)) url('../Img/hero.jpg');
+    background-color: #000000;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.suscribir {
+    
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+}
+
+.suscribir h3 {
+    color: #fff;
+    font-size: 4rem;
+    padding-top: 4rem;
+    text-align: center;
+}
+
+.suscribir p {
+    color: #c6f606;
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+/* FORMULARIO */
+
+form {
+    width: 40%;
+    height: auto;
+    margin: 0 auto;
+    font-size: 1.5rem;
+    border: none;
+    padding: 2rem;
+    border-radius: 0.2rem;
+    padding-top: 7rem;
+    margin-bottom: 2rem;
+}
+
+label {
+    color: #c6f606;
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+
+input,
+select,
+textarea {
+    background-color: transparent; /* Ajuste el fondo transparente */
+    color: #c6f606;
+    background-color: #000000;
+    font-family: "Play", sans-serif;
+    width: 100%;
+    padding: 1rem;
+    border: 2px solid #c6f606;
+    margin-bottom: 1.5rem;
+    resize: none;
+    border-radius: 1.5rem;
+}    
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+}
+
+input[type="submit"] {
+    background: #c6f606;
+    color: #000000; /* Color del texto del botón de enviar */
+    border: none;
+    width: 100%;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 0;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #c6f606c9; /* Cambia el color de fondo al pasar el ratón sobre el botón de enviar */
+}
+
+/* FIN FORMULARIO*/
+
+.servicios {
+    padding: 5rem 0;
+    text-align: center;
+    color: #fff;
+}
+
+.servicios h2 {
+    font-size: 5rem;
+    margin-bottom: 2rem;
+}
+
+.txt-1 {
+    font-size: 1.5rem;
+    padding: 0 20rem;
+}
+
+.grupo-servicios {
+    display: flex;
+    justify-content: space-between;
+}
+
+.servicio {
+    padding: 3rem 2rem;
+}
+
+.servicio img {
+    width: 6rem;
+    margin-bottom: 2rem;
+}
+
+.servicio h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+}
+
+.servicio p {
+    font-size: 1.2rem;
+}
+
+.porfolio {
+    text-align: center;
+    padding: 5rem 0;
+    color: #fff;
+}
+
+.porfolio-txt {
+    margin-bottom: 5rem;
+}
+
+.porfolio-txt h2 {
+    font-size: 5rem;
+    margin-bottom: 3rem;
+}
+
+.porfolio-txt p {
+    font-size: 1.2rem;
+}
+
+/* TRAINERS */
+
+.imagen {
+    display: flex;
+    justify-content: center;
+}
+
+.imagen-zoom {
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.5s, box-shadow 0.3s;
+}
+
+.imagen-zoom img {
+    width: 25rem;
+    margin: 0 1rem;
+    transition: opacity 0.5s ease; /* Transición suave para la opacidad */
+}
+
+/* Al pasar el mouse, la imagen se difumina */
+.imagen-zoom:hover img {
+    opacity: 0.3; /* Controla el nivel de opacidad al pasar el mouse */
+}
+
+/* Efecto de escala y sombra al pasar el mouse */
+.imagen-zoom:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.327);
+}
+
+.imagen-info {
+    display: none; /* Oculto por defecto */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.157); /* Fondo semitransparente */
+    color: white;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Mostrar imagen-info al pasar el mouse */
+.imagen-zoom:hover .imagen-info {
+    display: flex;
+}
+
+.imagen-info h3, .imagen-info p {
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
+}
+
+.imagen-info h3 {
+    margin-top: 30rem;
+    font-size: 2rem;
+    color: #c6f606;
+}
+
+.imagen-info p {
+    margin: 0.5rem;
+}
+
+/* FIN TRAINERS */
+
+.bg-sec {
+    background: linear-gradient(rgba(0, 0, 0, 0.40), rgba(0, 0, 0, 0.50)), url(../Img/bg-sec.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    margin: 3rem 0;
+}
+
+.bg-txt {
+    padding: 12rem 0;
+    text-align: center;
+    color: #fff;
+}
+
+.bg-txt h2 {
+    font-size: 5rem;
+    margin-bottom: 3rem;
+    text-shadow: 0 0 10px #000000;
+}
+
+.bg-txt p {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+    text-shadow: 0 0 10px #000000;
+}
+
+.precios {
+    padding: 5rem 0;
+    margin-bottom: 5rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    color: #fff;
+}
+
+.precio {
+    border: 2px solid #c6f606;
+    padding: 1rem;
+    text-align: center;
+}
+
+.precio h3 {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+}
+
+.precio ul li {
+    font-size: 1.3rem;
+}
+
+footer {
+    background-color: #c6f606;
+    padding: 10rem 0;
+}
+
+.ft {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.enlace h3 {
+    color: #000000;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.enlace a {
+    color: #000000;
+    display: block;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.enlace .logo {
+    font-weight: bolder;
+    font-size: 4rem;
+    color: #000000;
+}
+
+.redes {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.redes i {
+    font-size: 2rem;
+    border: 1px solid #000000;
+    padding: 0.7rem;
+    transition: all .5s;
+}
+
+.redes i:hover {
+    background-color: #000000;
+    color: #c6f606;
+}
+
+.enlace form {
+    display: flex;
+    flex-direction: column;
+}
+
+.boton-2 {
+    padding: 1rem 2rem;
+    margin-bottom: 2rem;
+    border-bottom: 2px solid #000000;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background-color: #00000000;
+    outline: none;
+}
+
+.boton-3 {
+    background-color: #000000;
+    padding: 1rem 2rem;
+    border: 0;
+    color: #fff;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+.boton-3:hover {
+    background-color: #90b40041;
+}
+
+.enlace li img {
+    width: 15rem;
+    cursor: pointer;
+}
+
+#boton-top {
+    display: none;
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    padding: 0.5rem;
+    font-size: 1.7rem;
+    width: 3.5rem;
+    height: 3.2rem;
+    background-color: #c6f6062b;
+    color: #000000;
+    border: none;
+    box-shadow: 0 1px 3px #00000051;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+#boton-top:hover {
+    background-color: #c6f606;
+    color: #000000;
+}
+
+@media (max-width: 768px) {
+
+    .menu {
+        padding: 2rem;
+    }
+    
+    .menu label {
+        display: initial;
+    }
+
+    .menu-icono {
+        width: 3rem;
+    }
+
+    .menu .nav-bar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #000000d6;
+        backdrop-filter: blur(1rem);
+        height: 100vh;
+        display: none;
+    }
+
+    .menu .nav-bar ul li {
+        width: 100%;
+    }
+
+    .menu .nav-bar ul li a:hover {
+        color: #c6f606;
+    }
+
+    #menu:checked ~ .nav-bar {
+        display: initial;
+    }
+
+    .header-text p {
+        width: 90%;
+        margin: 0 auto;
+        padding-top: 2rem;
+    }
+
+    .servicios {
+        padding: 3rem;
+    }
+
+    .servicios h2 {
+        margin-bottom: 2rem;
+    }
+
+    .servicios p {
+        margin-bottom: 2rem;
+    }
+    
+    .grupo-servicios {
+        display: block;
+    }
+
+    .porfolio {
+        padding: 3rem;
+    }
+
+    .porfolio .imagen {
+        flex-direction: column;
+    }
+
+    .imagen-zoom {
+        margin-top: 2.5rem;
+    }
+
+    .imgs {
+        display: block;
+    }
+
+    .imgs img {
+        margin-bottom: 2.5rem;
+    }
+
+    .bg-txt {
+        width: 80%;
+        padding: 6rem 0;
+    }
+
+    .precios {
+        grid-template-columns: auto;
+        padding: 0 2rem;
+    }
+
+    footer {
+        padding: 8rem 0;
+    }
+
+    .ft {
+        display: block;
+    }
+
+    .enlace .logo {
+        font-size: 5rem;
+        margin-bottom: 2.5rem;
+    }
+
+    .redes {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    .enlace h3 {
+        padding-top: 4rem;
+        text-align: center;
+    }
+
+    .enlace li {
+        display: flex;
+        justify-content: center;
+    }
+
+    .enlace li img {
+        width: 20rem;
+        margin: 0 auto;
+    }
+
+    .suscribir h3 {
+        padding-top: 5rem;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* El video se ajuste y se recorte según el tamaño del contenedor */
+      }
+}
